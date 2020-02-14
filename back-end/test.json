@@ -1,0 +1,9 @@
+{
+    "sensor_id" : 987654321,
+    "owner" : "Kevin Michelin",
+    "data_type" : {
+        "UV" : "lux",
+        "temperature" : "°",
+        "battery" : "%" 
+    }
+}

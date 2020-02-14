@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sams'ISEN</title>
+
+    <!-- Semantic UI CDN-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <!-- Charts.js CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <!-- Style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="ui grid">
+        <div class="sixteen wide column" id="header">
+            <h1>Sams'ISEN</h1>
+        </div>
+        <div class="four wide column" id="menu_div">
+            <h2 id="client_name">M. Jean Dupond</h2>
+            <div class="ui divider"></div>
+            <div id="sensor_div">
+                <h4> Outside Weather_station 1.34</h4>
+                <p>station id : 1045392847593</p>
+                <div class="ui blue vertical fluid menu">
+                    <a class="active item">
+                      <div class="ui  small teal label">21.45 °</div>
+                      Temperature
+                    </a>
+                    <a class="item">
+                      <div class="ui small label">53.43 %</div>
+                      Humidity
+                    </a>
+                    <a class="item">
+                      <div class="ui small label">87.32 %</div>
+                      Battery
+                    </a>
+                </div>
+                <div class="ui divider"></div>
+            </div>
+            
+            <div id="sensor_div">
+                <h4> Field 02</h4>
+                <p>station id : 1145375409793</p>
+                <div class="ui blue vertical fluid menu">
+                    <a class="item">
+                      <div class="ui small label">284 lux</div>
+                      UV
+                    </a>
+                    <a class="item">
+                      <div class="ui small label">0.034 %</div>
+                      CO² level
+                    </a>
+                    <a class="item">
+                      <div class="ui small label">23.10 %</div>
+                      Battery
+                    </a>
+                </div>
+                <div class="ui divider"></div>
+            </div>
+
+            <div id="sensor_div">
+                <h4> Kitchen </h4>
+                <p>station id : 1498392807513</p>
+                <div class="ui vertical fluid menu">
+                    <a class="item">
+                      <div class="ui small label">34.2 °</div>
+                      Temperature
+                    </a>
+                    <a class="item">
+                      <div class="ui small label">86.21 %</div>
+                      Humidity
+                    </a>
+                    <a class="item">
+                      <div class="ui small label">98.32 %</div>
+                      Battery
+                    </a>
+                </div>
+                <div class="ui divider"></div>
+            </div>
+        </div>
+    
+        <div class="twelve wide column" id="graph_div">
+            <canvas id="myChart" width="500" height="200"></canvas>
+        </div>
+    </div>
+    
+
+    <footer>
+
+    </footer>
+
+    <!-- js/index.js-->
+    <script src="js/index.js"></script>
+</body>
+</html>

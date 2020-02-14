@@ -1,0 +1,19 @@
+#header {
+    text-align: center;
+    padding-top: 1%;
+    background-color: #a2d729;
+}
+
+#menu_div {
+    background-color: #a2d729;
+    padding-left: 2%;
+}
+
+#graph_div {
+    background-color: #efffc8;
+    padding-right: 2%;
+}
+
+a.item {
+    color: #4495e5;
+}
