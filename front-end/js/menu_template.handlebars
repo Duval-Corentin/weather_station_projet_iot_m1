@@ -1,0 +1,17 @@
+{{#each sensor}}
+<div id="sensor_div">
+    <h4>{{this.station_name}}</h4>
+    <p>station id : {{this.sensor_id}}</p>
+    <div class="ui blue vertical fluid menu">
+        
+        {{#each this.data_type}}
+        <a class="item">
+          <div class="ui  small label"> {{this.value}}</div>
+              {{this.key}}
+        </a>
+        {{/each}}
+    </div>
+    <div class="ui divider"></div>
+</div>
+{{/each}}
+
