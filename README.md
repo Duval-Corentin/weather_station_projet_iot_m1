@@ -34,13 +34,13 @@ Pour Node
 ```console
  $ node --version
  
- $ v11.15.0
+  v11.15.0
 ```
 Pour Mongo DB
 ```console
 $ mongo --version
 
-$ MongoDB shell version v3.6.3
+  MongoDB shell version v3.6.3
   git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
   OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
   allocator: tcmalloc
@@ -50,5 +50,25 @@ $ MongoDB shell version v3.6.3
       target_arch: x86_64
 ```
 
+On peut cloner le repository : 
+```console
+$ git clone https://github.com/Duval-Corentin/weather_station_projet_iot_m1.git
+$ cd weather_station_projet_iot_m1/back_end
+```
+On lance le serveur mongo : 
+```console
+$ mongod --dbpath db/ --port 3001
+
+[...]
+2020-02-26T19:43:02.734+0100 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'back-end/db/diagnostic.data'
+2020-02-26T19:43:02.735+0100 I NETWORK  [initandlisten] waiting for connections on port 3001
+```
+
+On peut ensuite lancer le script du back-end : 
+```console
+$ node index.js
+
+Sams'ISEN back-end listening on port 3000.
+```
 ## Front-end
 
