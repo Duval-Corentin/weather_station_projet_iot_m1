@@ -23,12 +23,21 @@ Le capteur qui reste en veille la plupart du temps va sortir du sommeil pour pre
 * **Node JS**
 * **Express JS** création du serveur http et traitement des routes + layer sécurité.
 * **Mongo DB** stockage des données. 
-* **Express JSON parser** middleware Express pour le parsing JSON
+* **Express JSON parser** middleware Express pour le parsing des requests
 
 #### Prérequis et Instalation : 
 
-``
+Pour faire fonctionner notre back-end il faut **Mongo DB** au moins à la version *3.6.3* (https://docs.mongodb.com/manual/installation/) ainsi que **NodeJS** au moins à la version *11.15.0* (https://nodejs.org/en/).
 
+Pour tester les versions installés : 
+Pour Node
+```console
+ node --version
+```
+Pour Mongo DB
+```console
+mongo --version
+```
 
 ## Front-end
 
