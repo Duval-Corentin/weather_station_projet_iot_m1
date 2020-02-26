@@ -32,22 +32,22 @@ Pour faire fonctionner notre back-end il faut **Mongo DB** au moins à la versio
 Pour tester les versions installés : 
 Pour Node
 ```console
- node --version
+ $ node --version
  
- v11.15.0
+ $ v11.15.0
 ```
 Pour Mongo DB
 ```console
-mongo --version
+$ mongo --version
 
-MongoDB shell version v3.6.3
-git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
-OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
-allocator: tcmalloc
-modules: none
-build environment:
-    distarch: x86_64
-    target_arch: x86_64
+$ MongoDB shell version v3.6.3
+  git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+  OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+  allocator: tcmalloc
+  modules: none
+  build environment:
+      distarch: x86_64
+      target_arch: x86_64
 ```
 
 ## Front-end
