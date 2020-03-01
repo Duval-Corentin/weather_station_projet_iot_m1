@@ -78,3 +78,11 @@ Pour réaliser cette interface nous avons utilisé les framworks suivants :
 * **Handlebars.js** (https://handlebarsjs.com/) pour la gestion des templates HTML
 * **Jquery** (https://jquery.com/) comme librairie JS
 * **Charts.js** (https://www.chartjs.org/) pour la gestion des graphs
+
+# Amélioration evisagables
+
+* mise en place d'un layer "sécurité" au niveau du back-end (HTTPS & authentification de bout en bout)
+* amélioration de l'interface graphque avec plus d'options d'affichage de graph
+* possiblité de rajouter des capteurs au système "à la volée", avec pourquoi pas une page "administration" au niveau de l'interface graphique
+* possibilité de comparer les données de plusieurs capteurs / plusieurs périodes temporelles. 
+* géolocalisation des capteurs (Sigfox, GPRS, saisie utilisateur)
