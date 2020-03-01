@@ -21,7 +21,7 @@ app.get('/sensor/:sensor_id', function (req, res) {
 
         db.db("weather_station").collection("sensor").find(req.params).toArray( (err, result) => {
           if (err) throw err;
-          console.log("request sensor : " + result);
+          
           db.close();
           res.send(result);
         });
@@ -36,7 +36,7 @@ app.get('/sensor', function (req, res) {
 
       db.db("weather_station").collection("sensor").find().toArray( (err, result) => {
         if (err) throw err;
-        console.log("request sensor : " + result);
+        
         db.close();
         res.send(result);
       });
@@ -49,7 +49,6 @@ app.get('/sensor_data/:sensor_id/', function (req, res) {
         if (err) throw err;
         db.db("weather_station").collection("sensor_data").find(req.params).toArray( (err, result) => {
           if (err) throw err;
-          console.log("request sensor data : " + result);
           db.close();
           res.send(result);
         });
@@ -57,12 +56,12 @@ app.get('/sensor_data/:sensor_id/', function (req, res) {
 });
 
 app.get('/sensor_data/:sensor_id/:from/:to', function (req, res) {
-  console.log(req);
+  
   MongoClient.connect(url, (err, db) => {
       if (err) throw err;
       db.db("weather_station").collection("sensor_data").find({"sensor_id" : req.params.sensor_id, "time" : {$lt : Number(req.params.to), $gt : Number(req.params.from)}}).toArray( (err, result) => {
         if (err) throw err;
-        console.log("request sensor data : " + result);
+        
         db.close();
 
         var selected_result = [];
@@ -89,7 +88,6 @@ app.post('/sensor', function (req, res) {
         if (err) throw err;
         db.db("weather_station").collection("sensor").insertOne(req.body, function(err, res) {
           if (err) throw err;
-          console.log(req.body);
           db.close();
         });
       });
@@ -102,7 +100,6 @@ app.post('/sensor_data', function (req, res) {
         req.body.time = Math.floor(Date.now() / 1000);
         db.db("weather_station").collection("sensor_data").insertOne(req.body, function(err, res) {
           if (err) throw err;
-          console.log(req.body);
           db.close();
         });
       });
@@ -119,5 +116,5 @@ app.use(function(req, res, next) {
 
 // start the server in the port 3000 !
 app.listen(3000, function () {
-    console.log('Example app listening on port 3000.');
+    console.log('Sams\'ISEN app listening on port 3000.');
 });
