@@ -71,4 +71,10 @@ $ node index.js
 Sams'ISEN back-end listening on port 3000.
 ```
 ## Front-end
+L'interface est continué d'une page Web accesible à partir du fichier *index.html* situé dans le dossier *front-end*. 
+Pour réaliser cette interface nous avons utilisé les framworks suivants : 
 
+* **Semantic UI** (https://semantic-ui.com/) pour l'UI
+* **Handlebars.js** (https://handlebarsjs.com/) pour la gestion des templates HTML
+* **Jquery** (https://jquery.com/) comme librairie JS
+* **Charts.js** (https://www.chartjs.org/) pour la gestion des graphs
