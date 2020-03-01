@@ -79,6 +79,8 @@ Pour réaliser cette interface nous avons utilisé les framworks suivants :
 * **Jquery** (https://jquery.com/) comme librairie JS
 * **Charts.js** (https://www.chartjs.org/) pour la gestion des graphs
 
+L'inteface permet de voir tous les capteurs associés à un utilisateur, et d'afficher les données des différentes variables captés par les différents capteurs sur plusieurs échelles de temps. 
+
 # Amélioration evisagables
 
 * mise en place d'un layer "sécurité" au niveau du back-end (HTTPS & authentification de bout en bout)
