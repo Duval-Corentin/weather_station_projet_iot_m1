@@ -16,11 +16,12 @@ Le capteur qui reste en veille la plupart du temps va sortir du sommeil pour pre
 ## HARDWARE
 * ESP8266 -> Microcontrôlleur principal
 * Module Sigfox -> transmission radio (communique en UART avec l'ESP8266)
-* DHT11 -> capteur de température et d'humidité
+* DHT11 -> capteur de température et d'humidité (communuique en "one-wire" avec l'ESP8266)
+* ADC -> Convertisseur Analogique Numérique intégré à l'ESP, on l'utilise pour mesurer le niveau de batterie.
 
 * Graĉe aux biblioathèques SoftwareSerial.h et DHT11.h on crée un programme sur l'IDE d'Arduino pour controller les différentes cartes.
-* L'ESP8266 récupère les informations provenant du capteur puis les adaptes à la plage dynamiques de l'espace fournis par un message Sigfox c'est à dire 1 octet.
-* Un message de 0 à 12 octets est ensuite envoyé via le module sigfox, ici on en utilise seulement 3 pour les informations de température, humidité, et niveau de batterie.
+L'ESP8266 récupère les informations provenant du capteur puis les adaptes à la plage dynamiques de l'espace fournis par un message Sigfox c'est à dire 1 octet.
+Un message de 0 à 12 octets est ensuite envoyé via le module sigfox, ici on en utilise seulement 3 pour les informations de température, humidité et niveau de batterie.
 
 
 ## CallBack SigFox
