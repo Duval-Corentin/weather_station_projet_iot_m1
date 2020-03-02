@@ -24,6 +24,8 @@ Un message de 3 octets
 
 ## CallBack SigFox
 
+Pour la partie callback SigFox, une récupération des données est effectuée, pour cela on peut partir du backend mis à disposition par Sigfox.
+Les données du callback sont reformatées pour pouvoir envoyer sur un backend, cela est fait grâce aux lignes suivantes ajoutées dans l'édition du callback qui est sous la forme d'un json.
 
 ```console
 "temperature":"{customData#temperature}",
