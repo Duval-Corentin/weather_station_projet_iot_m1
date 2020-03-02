@@ -33,6 +33,7 @@ Les données du callback sont reformatées pour pouvoir envoyer sur un backend, 
 "humidity":"{customData#humidity}",
 "battery":"{customData#battery}" ,
 ```
+Le choix de laisser le calcul du temps à SigFox permet de baisser le coût du produit (pas de RTC nécessaire) et d'efficacité sur la durée (système moins gourmand en batterie).
 
 ## Back-end 
 
